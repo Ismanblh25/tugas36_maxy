@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS automation;
+
+USE automation;
+
+CREATE TABLE search_results (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    query VARCHAR(255) NOT NULL,
+    title TEXT NOT NULL,
+    url TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
